@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Admin Dashbord</title>
-        <link rel="stylesheet" type="text/css" href="CSS/adminDashbord.css">
+        <link rel="stylesheet" type="text/css" href="styles/adminDashbord.css">
     </head>
     <body>
         <div class="main">

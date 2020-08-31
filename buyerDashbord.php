@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Buyer Dashbord</title>
-        <link rel="stylesheet" type="text/css" href="CSS/buyerDashbord.css">
+        <link rel="stylesheet" type="text/css" href="styles/buyerDashbord.css">
     </head>
     <body>
         <div class="main">
