@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Admin Dashbord</title>
-        <link rel="stylesheet" type="text/css" href="styles/adminDashbord.css">
+        <title>Marchandiser Dashbord</title>
+        <link rel="stylesheet" type="text/css" href="../Styles/merchandiserDashbord.css">
     </head>
     <body>
         <div class="main">
@@ -16,12 +16,9 @@
                             <a href="#">
                                 <button><b>Home</b></button>
                             </a>
-                            <button><b>Customers</b></button>
-                            <button><b>Bikes</b></button>
-                            <button><b>Merchadisers</b></button>
-                            <button><b>Available</b></button>
-                            <button><b>Order</b></button>
+                            <button><b>Add a Bike</b></button>
                             <button><b>Profile</b></button>
+                            <button><b>Available</b></button>
                             <a href="homePage.php">
                                 <button><b>LogOut</b></button>
                             </a>
