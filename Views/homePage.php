@@ -8,7 +8,7 @@
         <header>
             <div class="main">
                 <div class="logo">
-                    <img src="Image/logo.png">
+                    <img src="../Resources/Image/logo.png">
                 </div>
                 <ul>
                     <li class="active">

@@ -7,7 +7,7 @@
     <body>
         <div class="main">
             <div class="logo">
-                <img src="Image/logo.png">
+                <img src="../Resources/Image/logo.png">
             </div>
             <div class="sidebar">
                 <ul>

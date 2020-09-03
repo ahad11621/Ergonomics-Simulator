@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="box">
-            <img src="Image/avatar.png" class="avatar">
+            <img src="../Resources/Image/avatar.png" class="avatar">
             <h3>Registration</h3>
             <form>
                 <input type="text" name="" placeholder="Company Name">
