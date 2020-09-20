@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Log In</title>
-        <link rel="stylesheet" type="text/css" href="../Styles/LogIn.css">
-    </head>
-    <body>
-        <div class="box">
+<?php
+    include '../Views/mainHeader.php';
+?>
+
+
+        <div class="loginbox">
             <img src="../Resources/Image/avatar.png" class="avatar">
             <h1>Login Here</h1>
             <form>
@@ -15,5 +13,8 @@
                 <a href="#">Forgot Password</a>
             </form>
         </div>
-    </body>
-</html>
+
+
+<?php 
+    include '../Views/mainFooter.php';
+?>

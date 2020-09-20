@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Register</title>
-        <link rel="stylesheet" type="text/css" href="../Styles/register.css">
-    </head>
-    <body>
-        <div class="box">
+<?php
+    include '../Views/mainHeader.php';
+    require_once '../Controllers/bikeController.php';
+?>
+
+        <div class="registerbox">
             <img src="../Resources/Image/avatar.png" class="avatar">
             <h3>Registration</h3>
             <form>
@@ -22,5 +20,7 @@
                 <!-- <a href="#">Forgot Password</a> -->
             </form>
         </div>
-    </body>
-</html>
+
+<?php 
+    include '../Views/mainFooter.php';
+?>
