@@ -250,3 +250,34 @@ h3
     max-width: 1200px;
     margin: auto;
 }
+
+/* Index Page CSS */
+
+.simulationButton
+{
+    position: fixed;
+    left: 45%;
+    bottom: 70%;
+    margin: 25px;
+} 
+.simulationButton a
+{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 160px;
+    padding-left: 15px;
+    background-color: #fb2525;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 20px;
+    transition: 0.6s ease;
+}
+.simulationButton a:hover
+{
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #000;
+}

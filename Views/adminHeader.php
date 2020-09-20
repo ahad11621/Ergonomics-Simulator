@@ -16,6 +16,6 @@
 			<a href="#" class="btn btn-warning">New Bikes</a>
             <a href="#" class="btn btn-info">New Company</a>
             <a href="#" class="btn btn-info">Profile</a>
-			<a href="../Views/homePage.php" class="btn btn-danger">Logout</a>		
+			<a href="../Views/index.php" class="btn btn-danger">Logout</a>		
 		</div>
 		<!--menu ends-->
