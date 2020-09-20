@@ -15,6 +15,7 @@
                 <input type="text" name="" placeholder="E-mail">
                 <input type="text" name="" placeholder="Phone">
                 <input type="text" name="" placeholder="Address">
+                <input type="text" name="" placeholder="Trade Number">
                 <input type="password" name="" placeholder="Password">
                 <input type="password" name="" placeholder="Confirm Password">
                 <input type="submit" name="" value="Resister">

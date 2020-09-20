@@ -1,52 +1,136 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Century Gothic;
+
+body{
+	background-color:white;
+	padding:0px;
+	
 }
-body
-{
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Resources/Image/home_page.jpg);
-    /* background-image: url(../home_page.jpg); */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    font-family: Century Gothic;
+.card{
+	border:1px solid black;
+	width:300px;
+	height:50px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+	border-radius: 5px;
+	text-align: center;
+	background-color:black;
+	padding:5px;
+	
+	
 }
-.logo
-{
-    background-color: transparent;
-    text-align: left;
-    padding: 20px;
-    border-block-end: 2px solid black;
+.text{
+	font-family:consolas;
+	color:black;
 }
-.sidebar
-{
-    position: fixed;
-    width: 15%;
-    height: 100%;
-    background: transparent;
-    border-right: 2px solid black;
+.text-white{
+	font-family:consolas;
+	color:white;
 }
-.btn-group button
-{
-    background-color: transparent; /*rgb(104, 100, 104); */
-    border: black;
-    color: black;
-    padding: 10px 24px;
-    cursor: pointer;
-    width: 100%;
-    display: block;
+.footer{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family:consolas;
+	
 }
-.btn-group button:hover
-{
-    background-color: grey;
-    color: #000;
+.header{
+	position:relative;
+	left:0;
+	top:0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family:consolas;
+	padding:5px;
+	
 }
-.mainbar
-{
-    background-color: yellow;
-    width: 100%;
-    height: 100%;
+.center{
+	margin: 0 auto;
+    width:50% ;
+	padding:20px;
+	
+	
+}	
+.header-index{
+	position:relative;
+	left:0;
+	top:0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	font-family:consolas;
+	padding:5px;
+	
 }
+.name{
+	font-family:consolas;
+	font-size:16px;
+}
+
+.card-product{
+	border:1px solid;
+	width:200px;
+	height:300px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+	border-radius: 5px;
+	text-align: center;
+	padding:5px;
+	
+	
+}
+.card-image{
+	width:190px;
+	height:190px;
+	border-radius: 5px;
+}
+.card-text{
+	text-align:center;
+	
+}
+.price-label{
+	width:185px;
+	padding:3px;
+	margin-left:2px;
+	background-color:black;
+	color:white;
+	border-radius: 5px;
+}
+.center-index{
+	margin: 0 auto;
+    width:90% ;
+	padding:20px;
+			
+}
+.item-image{
+	width:200px;
+	height:250px;
+	border-radius: 5px;
+}
+.center-login{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding-left:100px;
+	padding-right:100px;
+	padding-bottom:10px;
+	border:1px solid black;
+	border-radius:10px;
+	vertical-align:center;
+	
+			
+}
+.btn{
+	font-family:consolas;
+}
+
+
+
