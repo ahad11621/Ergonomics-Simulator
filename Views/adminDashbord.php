@@ -1,6 +1,6 @@
 <?php include 'adminHeader.php';?>
 <!--dashboard starts -->
-<div>
+<!-- <div>
 	<table  align="center">
 		<tr>
 			<td>
@@ -45,6 +45,6 @@
 			<td>10.2.2020</td>
 		</tbody>
 	</table>
-</div>
+</div> -->
 <!--dashboard ends -->
 <?php include 'adminFooter.php';?>

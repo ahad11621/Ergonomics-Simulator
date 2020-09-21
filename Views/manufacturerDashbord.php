@@ -1,4 +1,4 @@
-<?php include 'companyHeader.php';?>
+<?php include 'manufacturerHeader.php';?>
 <!--dashboard starts -->
 <div>
 	<table  align="center">
@@ -47,4 +47,4 @@
 	</table>
 </div>
 <!--dashboard ends -->
-<?php include 'companyFooter.php';?>
+<?php include 'manufacturerFooter.php';?>
