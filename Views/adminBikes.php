@@ -18,7 +18,8 @@
 			<th>Bike ID</th>
 			<th>Bike Name</th>
 			<th>Manufacturer Name</th>
-			<th></th>
+            <th></th>
+            <th></th>
 			
 		</thead>
 		<tbody>
@@ -31,7 +32,8 @@
 							echo "<td>".$bike["id"]."</td>";
                             echo "<td>".$bike["name"]."</td>";
                             echo "<td>".$bike["manufacturer"]."</td>";
-							echo '<td><a class="btn btn-danger">Delete</td>';
+                            echo '<td><a class="btn btn-info">Simulation</td>';
+                            echo '<td><a class="btn btn-danger">Delete</td>';
 						echo "<tr>";
 					}
 				}

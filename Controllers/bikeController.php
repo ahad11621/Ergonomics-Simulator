@@ -16,11 +16,6 @@
 		$bikes = getAssocArray($query);
 		return $bikes;
 	}
-
-	// if(isset($_POST["addBike"]))
-	// {
-	// 	addThisBike($_POST["id"]);
-	// }
 	function addThisBike($bid)
 	{
 		$query="UPDATE bikes SET approval = 1 WHERE id = $bid";

@@ -6,13 +6,13 @@
 	</head>
 	<body>
 		<div class="text-center">
-			<h1 class="header">Company</h1>
+			<h1 class="header">Manufacturer</h1>
 		</div>
 		<!--menu starts-->
 		<div class="text-center">
 			<a href="#" class="btn btn-primary">Dashboard</a>
-			<a href="#" class="btn btn-warning">Bikes</a>
-			<a href="#" class="btn btn-danger">Add a new Bike</a>
+			<a href="#" class="btn btn-info">Bikes</a>
+			<a href="#" class="btn btn-warning">Add a new Bike</a>
             <a href="#" class="btn btn-info">Profile</a>
 			<a href="../Views/index.php" class="btn btn-danger">Logout</a>		
 		</div>
