@@ -10,7 +10,7 @@
 		</div>
 		<!--menu starts-->
 		<div class="text-center">
-			<a href="#" class="btn btn-primary">Dashboard</a>
+			<a href="adminDashbord.php" class="btn btn-primary">Dashboard</a>
 			<a href="adminBikes.php" class="btn btn-info">Bikes</a>
 			<a href="adminNewBikes.php" class="btn btn-warning">New Bikes</a>
 			<a href="adminManufacturer.php" class="btn btn-info">Manufacturer</a>
