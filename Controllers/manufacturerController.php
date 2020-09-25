@@ -9,6 +9,12 @@
 		$manufacturers = getAssocArray($query);
 		return $manufacturers;
 	}
+	function deleteThisManufacturer($dmid)
+	{
+		$query = "DELETE FROM manufacturers WHERE id = '$dmid'";
+		execute($query);
+		header("Location: adminManufacturer.php");
+	}
 
 	// adminNewManufacturer Page
 	function getAllNewManufacturers()
@@ -19,7 +25,13 @@
 	}
 	function addThisManufacturer($mid)
 	{
-		$query="UPDATE manufacturers SET approval = 1 WHERE id = $mid";
+		$query="UPDATE manufacturers SET approval = 1 WHERE id = '$mid'";
+		execute($query);
+		header("Location: adminNewManufacturer.php");
+	}
+	function deleteThisManufacturer1($dmid1)
+	{
+		$query = "DELETE FROM manufacturers WHERE id = '$dmid1'";
 		execute($query);
 		header("Location: adminNewManufacturer.php");
 	}

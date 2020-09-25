@@ -8,6 +8,16 @@
         $c_id = $_REQUEST["id"];
         addThisBike($c_id);
     }
+    if(!empty($_REQUEST["key"]))
+    {
+        $dbid = $_REQUEST["key"];
+        deleteThisBike($dbid);
+    }
+    if(!empty($_REQUEST["key1"]))
+    {
+        $dbid = $_REQUEST["key1"];
+        deleteThisBike1($dbid);
+    }
     
 ?>
 
@@ -33,7 +43,7 @@
                             echo "<td>".$bike["name"]."</td>";
                             echo "<td>".$bike["manufacturer"]."</td>";
                             echo '<td><a class="btn btn-info">Simulation</td>';
-                            echo '<td><a class="btn btn-danger">Delete</td>';
+                            echo '<td><a href="adminBikes.php?key1='.$bike["id"].'" class="btn btn-danger">Delete</td>';
 						echo "<tr>";
 					}
 				}

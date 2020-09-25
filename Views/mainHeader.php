@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../Styles/mystyle.css">
+        <script type="text/javascript" src="../Scripts/register.js"></script>
     </head>
     <body>
         <div class="heading">

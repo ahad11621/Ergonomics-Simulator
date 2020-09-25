@@ -3,11 +3,11 @@
     require_once '../Controllers/bikeController.php';
 ?>
 
-    <div class="company">
-        <h3>Company:</h3>
+    <div class="manufacturer">
+        <h3>manufacturer:</h3>
             <div class="Selection">
                 <select name="" id="">
-                    <option value="volvo">Select a Company</option>
+                    <option value="volvo">Select a manufacturer</option>
                     <option value="saab">Saab</option>
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>

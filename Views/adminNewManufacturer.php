@@ -3,6 +3,19 @@
     require_once '../Controllers/manufacturerController.php';
     
     $manufacturers = getAllNewManufacturers();
+
+
+    if(!empty($_REQUEST["mid"]))
+    {
+        $m_id = $_REQUEST["mid"];
+        addThisManufacturer($m_id);  
+    }
+    if(!empty($_REQUEST["mid1"]))
+    {
+        $dmid1 = $_REQUEST["mid1"];
+        deleteThisManufacturer1($dmid1);  
+    }
+
 ?>
 
 <div class="center">
@@ -33,8 +46,8 @@
                             echo "<td>".$manufacturer["phone"]."</td>";
                             echo "<td>".$manufacturer["address"]."</td>";
                             echo "<td>".$manufacturer["trade_number"]."</td>";
-                            echo '<td><a href="adminManufacturer.php?id='.$manufacturer["id"].'" class="btn btn-success">Add</a></td>';
-							echo '<td><a class="btn btn-danger">Delete</td>';
+                            echo '<td><a href="adminNewManufacturer.php?mid='.$manufacturer["id"].'" class="btn btn-success">Add</a></td>';
+							echo '<td><a href="adminNewManufacturer.php?mid1='.$manufacturer["id"].'" class="btn btn-danger">Delete</td>';
 						echo "<tr>";
 					}
 				}

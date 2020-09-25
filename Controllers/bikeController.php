@@ -8,6 +8,12 @@
 		$bikes = getAssocArray($query);
 		return $bikes;
 	}
+	function deleteThisBike1($dbid)
+	{
+		$query = "DELETE FROM bikes WHERE id = '$dbid'";
+		execute($query);
+		header("Location: adminBikes.php");
+	}
 
 	// adminNewBikes Page
 	function getAllNewBikes()
@@ -18,7 +24,13 @@
 	}
 	function addThisBike($bid)
 	{
-		$query="UPDATE bikes SET approval = 1 WHERE id = $bid";
+		$query="UPDATE bikes SET approval = 1 WHERE id = '$bid'";
+		execute($query);
+		header("Location: adminNewBikes.php");
+	}
+	function deleteThisBike($dbid)
+	{
+		$query = "DELETE FROM bikes WHERE id = '$dbid'";
 		execute($query);
 		header("Location: adminNewBikes.php");
 	}

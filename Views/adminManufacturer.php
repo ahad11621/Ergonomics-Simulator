@@ -6,9 +6,8 @@
 
     if(!empty($_REQUEST["mid"]))
     {
-        $m_id = $_REQUEST["mid"];
-        addThisManufacturer($m_id);
-        
+        $dmid = $_REQUEST["mid"];
+        deleteThisManufacturer($dmid);  
     }
    
 ?>
@@ -40,7 +39,7 @@
                             echo "<td>".$manufacturer["phone"]."</td>";
                             echo "<td>".$manufacturer["address"]."</td>";
                             echo "<td>".$manufacturer["trade_number"]."</td>";
-							echo '<td><a class="btn btn-danger">Delete</td>';
+							echo '<td><a href="adminManufacturer.php?mid='.$manufacturer["id"].'" class="btn btn-danger">Delete</td>';
 						echo "<tr>";
 					}
 				}

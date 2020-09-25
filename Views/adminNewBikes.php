@@ -1,7 +1,8 @@
 <?php 
     include 'adminHeader.php';
     require_once '../Controllers/bikeController.php';
-    $bikes = getAllNewBikes();
+	$bikes = getAllNewBikes();
+
 
 ?>
 
@@ -28,7 +29,7 @@
                             echo "<td>".$bike["manufacturer"]."</td>";
 							echo '<td><a href="adminBikes.php?id='.$bike["id"].'" class="btn btn-success">Add</a></td>';
 							echo '<td><a class="btn btn-info">Simulation</td>';
-							echo '<td><a class="btn btn-danger">Delete</td>';
+							echo '<td><a href="adminBikes.php?key='.$bike["id"].'" class="btn btn-danger">Delete</td>';
 						echo "<tr>";
 					}
 				}
