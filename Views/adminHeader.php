@@ -15,5 +15,5 @@
 			<a href="adminManufacturer.php" class="btn btn-info">Manufacturer</a>
             <a href="adminNewManufacturer.php" class="btn btn-warning">New Manufacturer</a>
             <a href="#" class="btn btn-info">Profile</a>
-			<a href="../Views/index.php" class="btn btn-danger">Logout</a>		
+			<a href="../Views/logOut.php" class="btn btn-danger">Logout</a>		
 		</div>

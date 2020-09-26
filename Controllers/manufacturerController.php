@@ -36,5 +36,12 @@
 		header("Location: adminNewManufacturer.php");
 	}
 
+	//bikeSelection Page
+	function loadManufacturers()
+	{
+		$query = "SELECT * FROM bikes where approval = 1";
+		$manufacturers = getAssocArray($query);
+		return $manufacturers;
+	}
 
 ?>

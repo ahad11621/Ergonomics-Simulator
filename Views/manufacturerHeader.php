@@ -14,6 +14,6 @@
 			<a href="manufacturerBikes.php" class="btn btn-info">Bikes</a>
 			<a href="manufacturerAddNewBike.php" class="btn btn-warning">Add a new Bike</a>
             <a href="manufacturerProfile.php" class="btn btn-info">Profile</a>
-			<a href="../Views/index.php" class="btn btn-danger">Logout</a>		
+			<a href="../Views/logOut.php" class="btn btn-danger">Logout</a>		
 		</div>
 		<!--menu ends-->

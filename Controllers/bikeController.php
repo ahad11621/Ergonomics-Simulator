@@ -49,5 +49,11 @@
 		return $bikes;
 	}
 
+	//bikeSelection Page
+	// function loadBikes()
+	// {
+		
+	// }
+
 	
 ?>

@@ -1,5 +1,7 @@
 <?php
 	require_once '../Models/db_connect.php';
+	session_start();
+
 
 	$userID = "";
 	$err_userID = "";
@@ -31,29 +33,97 @@
 		if(!$hasError)
 		{
 			$password = md5($password);
-			authenticate($userID, $password);
 			
+			if($userID[0] == 'A')
+			{
+				$userID = $_POST['userID'];
+				if(authenticate($userID,$password))
+				{
+					$_SESSION['id'] = $userID;
+					header("Location: adminDashbord.php");
+				}
+			}
+			else
+				{
+					$_SESSION['id'] = $userID;
+					setcookie('id', $userID, time()+3600, '/');
+					header("Location: manufacturerDashbord.php");
+				}
 		}
 	}
 
 	function authenticate($userID, $password)
 	{
-		$query = "SELECT types from user where username = '$userID' and password = '$password'";
+		$query = "SELECT * from user where id = '$userID' and password = '$password'";
 		$result = getAssocArray($query);
-		if($result)
-		{
-			if($result == '1')
-			{
-				header("Location: manufacturerDashbord.php");
-			}
-			elseif($result == '0')
-			{
-				header("Location: adminDashbord.php");
-			}
+
+
+		if($result){
+			$result = $result[0];
 		}
 		return $result;
+
+		// if($result)
+		// {
+		// 	if($result['types'] == '1')
+		// 	{
+		// 		header("Location: manufacturerDashbord.php");
+		// 	}
+		// 	elseif($result['types'] == '0')
+		// 	{
+		// 		header("Location: adminDashbord.php");
+		// 	}
+		// }
+		// return $result;
 		
 		
 	}
-	
+
 ?>
+
+	
+
+
+	<!-- //	require_once('../services/managerService.php');
+
+	if(isset($_POST['login'])){
+
+		$userID = $_POST['userID'];
+		$password1 = $_POST['password'];
+		
+
+		if(empty($userID) || empty($password)){
+			header('location: ../Views/login.php?error=null_value');
+		}else{
+			$password = md5($password1);
+			$query = "SELECT * FROM user WHERE id = '$userID' AND password = '$password'"; 
+			$status = execute($query);
+
+			$id = $status['id'] ;
+			
+			if($status){
+				$status['id'] = $id;
+				
+				if($status['types'] == "1"){
+				
+					$_SESSION['id'] = $id;
+					setcookie('status', "OK", time()+3600, '/');
+
+					header('location: ../Views/manufacturerDashbord.php');
+				} 
+				else if($status['types'] == "0"){
+
+					$_SESSION['id'] = $id;
+
+					setcookie('status', "OK", time()+3600, '/');
+					
+					header('location: ../Views/adminDashbord.php');
+				}
+				else{
+					echo "sorry!!!";
+				}
+			}else{
+				header('location: ../Views/login.php?error=invalid_user');
+			}
+		}
+	} -->
