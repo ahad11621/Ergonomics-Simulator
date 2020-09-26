@@ -22,6 +22,9 @@
                     <li>
                         <a href="../Views/register.php">Register</a>
                     </li>
+                    <li>
+                        <input type = "text" class="bikeSearch" placeholder="Search a Bike">
+                    </li>
                 </ul>
             </div>
         </div>

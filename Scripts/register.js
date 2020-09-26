@@ -1,5 +1,7 @@
+
 function val()
 {
+    console.log('hello');
     //Manufacturer Name 
     var mn = false;
     var manufacturerName = document.getElementById('manufacturerName').value;

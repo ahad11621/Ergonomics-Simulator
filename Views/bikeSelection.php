@@ -4,7 +4,7 @@
 ?>
 
     <div class="manufacturer">
-        <h3>manufacturer:</h3>
+        <h3>Manufacturer:</h3>
             <div class="Selection">
                 <select name="" id="">
                     <option value="volvo">Select a manufacturer</option>

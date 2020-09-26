@@ -5,7 +5,6 @@
 	{
 		$userID = $_POST['userID'];
 		$password = $_POST['password'];
-		echo $userID
 	}
 	
 ?>
