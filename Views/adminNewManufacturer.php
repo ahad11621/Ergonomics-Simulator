@@ -27,8 +27,6 @@
 			<th>Owner Name</th>
 			<th>Email</th>
             <th>Phone</th>
-            <th>Address</th>
-            <th>Trade Number</th>
             <th></th>
             <th></th>
 		</thead>
@@ -44,8 +42,6 @@
                             echo "<td>".$manufacturer["owner_name"]."</td>";
                             echo "<td>".$manufacturer["email"]."</td>";
                             echo "<td>".$manufacturer["phone"]."</td>";
-                            echo "<td>".$manufacturer["address"]."</td>";
-                            echo "<td>".$manufacturer["trade_number"]."</td>";
                             echo '<td><a href="adminNewManufacturer.php?mid='.$manufacturer["id"].'" class="btn btn-success">Add</a></td>';
 							echo '<td><a href="adminNewManufacturer.php?mid1='.$manufacturer["id"].'" class="btn btn-danger">Delete</td>';
 						echo "<tr>";

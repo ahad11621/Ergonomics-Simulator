@@ -43,12 +43,17 @@
 					header("Location: adminDashbord.php");
 				}
 			}
+			else if($userID[0] == 'M')
+			{
+				$_SESSION['id'] = $userID;
+				setcookie('id', $userID, time()+3600, '/');
+				header("Location: manufacturerDashbord.php");
+			}
 			else
-				{
-					$_SESSION['id'] = $userID;
-					setcookie('id', $userID, time()+3600, '/');
-					header("Location: manufacturerDashbord.php");
-				}
+			{
+				echo "404!!! user not found!!";
+			}
+
 		}
 	}
 

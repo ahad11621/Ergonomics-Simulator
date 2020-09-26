@@ -11,7 +11,8 @@
 		<!--menu starts-->
 		<div class="text-center">
 			<a href="manufacturerDashbord.php" class="btn btn-primary">Dashboard</a>
-			<a href="manufacturerBikes.php" class="btn btn-info">Bikes</a>
+			<a href="manufacturerBikes.php" class="btn btn-info">Approved Bikes</a>
+			<a href="manufacturerNewBike.php" class="btn btn-warning">New Bikes</a>
 			<a href="manufacturerAddNewBike.php" class="btn btn-warning">Add a new Bike</a>
             <a href="manufacturerProfile.php" class="btn btn-info">Profile</a>
 			<a href="../Views/logOut.php" class="btn btn-danger">Logout</a>		

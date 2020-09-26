@@ -44,4 +44,22 @@
 		return $manufacturers;
 	}
 
+	//manufacturerBikes Page
+	function getManufacturerNameByID($mid)
+	{
+		$query = "SELECT * FROM manufacturers where approval = 1 and id = '$mid'";
+		$manufacturers = getAssocArray($query);
+		return $manufacturers['id'];
+	}
+	
+	function getAllByManufacturerName($mid)
+	{
+		$status = getManufacturerNameByID($mid);
+		$name = $status['name'];
+
+		$query = "SELECT * FROM bikes where approval = 1 and name = '$name'";
+		$bikes = getAssocArray($query);
+		return $bikes;
+	}
+
 ?>

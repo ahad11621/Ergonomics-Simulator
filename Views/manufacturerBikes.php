@@ -1,7 +1,9 @@
 <?php 
     include 'manufacturerHeader.php';
     require_once '../Controllers/bikeController.php';
-    $bikes = getAllApprovedBikes();
+    session_start();
+    $id = $_SESSION['id'];
+    $bikes = getAllByManufacturerName($id);
 
     // if(!empty($_REQUEST["id"]))
     // {

@@ -6,6 +6,10 @@
 
     foreach($bikes as $bike)
     {
-        echo $bike["name"]."<br>";
+        echo "<tr>".
+            "<td>".
+                "<a href='bikeInfo.php?id={$bike['id']}'>{$bike['name']}</a> ".
+            "</td>".
+    "</tr>";
     }
 ?>

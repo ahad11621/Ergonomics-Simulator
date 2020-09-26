@@ -32,7 +32,17 @@
                 </ul>
             </div>
         </div>
-        <div class="result" id = "result"></div>
+        <div class = "result">
+        <table cellspacing="0" cellpadding="8" width="275px">
+           <!-- <tr>
+            <td>ID</td>
+            <td>Action</td>
+           </tr> -->
+           <tbody id="result">
+             
+           </tbody>
+        </table> 
+        </div>
         <script>
             function searchBike(input)
             {

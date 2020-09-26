@@ -88,11 +88,12 @@ ul li a:hover
 
 .result
 {
-    position: fixed;
-    right: 11.5%;
-    top: 8.5%;
+    position: absolute;
+    float: right;
+    margin-top: 85;
+    font-size: 20px;
     color: white;
-    background-color: tomato;
+    margin-left: 84.2%;
 }
 
 /* login Page CSS */

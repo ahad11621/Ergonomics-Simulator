@@ -55,5 +55,11 @@
 		
 	// }
 
+	//manufacturerAddNewBike Pag
+	function insertNewbikeinfo($newBike){
+		$query = "INSERT INTO bikes VALUES ({$newBike['bikeID']}','{$newBike['bikeName']}','{$newBike['manufacturerName']}','0','{$newBike['bikeImg']}')";
+		execute($query);
+		header("Location: manufacturerAddNewBike.php");
+	}
 	
 ?>
