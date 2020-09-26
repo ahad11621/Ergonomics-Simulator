@@ -10,10 +10,10 @@
 		</div>
 		<!--menu starts-->
 		<div class="text-center">
-			<a href="#" class="btn btn-primary">Dashboard</a>
-			<a href="#" class="btn btn-info">Bikes</a>
-			<a href="#" class="btn btn-warning">Add a new Bike</a>
-            <a href="#" class="btn btn-info">Profile</a>
+			<a href="manufacturerDashbord.php" class="btn btn-primary">Dashboard</a>
+			<a href="manufacturerBikes.php" class="btn btn-info">Bikes</a>
+			<a href="manufacturerAddNewBike.php" class="btn btn-warning">Add a new Bike</a>
+            <a href="manufacturerProfile.php" class="btn btn-info">Profile</a>
 			<a href="../Views/index.php" class="btn btn-danger">Logout</a>		
 		</div>
 		<!--menu ends-->

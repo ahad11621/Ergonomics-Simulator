@@ -34,5 +34,20 @@
 		execute($query);
 		header("Location: adminNewBikes.php");
 	}
+
+	//ManufacturerBikes Page
+	// function getAllMyApprovedBikes()
+	// {
+
+	// }
+
+	//Search Bike 
+	function searchBike($id)
+	{
+		$query = "SELECT * FROM bikes WHERE approval = 1 and name LIKE '%$id%'";
+		$bikes = getAssocArray($query);
+		return $bikes;
+	}
+
 	
 ?>
