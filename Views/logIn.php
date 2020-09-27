@@ -1,13 +1,15 @@
 <?php
     include '../Views/mainHeader.php';
     require_once '../Controllers/loginController.php';
+    
     function userIdTest(){
         if(isset($_POST['login']))
         {
             $userId = $_POST['userID'];
             $pass = $_POST['password'];
-            if($userId == "" || $pass== ""){
-                echo "<div align='center' style='color: red;'>Invalid</div>";
+            if($userId == "" || $pass== "")
+            {
+                echo "<div align='center' style='color: red;'>Invalid!!</div>";
             }
         }
     }

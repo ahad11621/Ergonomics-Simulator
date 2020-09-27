@@ -42,20 +42,6 @@ body
 {
     display: inline-block;
 }
-.buttons ul li .bikeSearch
-{
-    height: 40px;
-    width: 280px;
-    background-color: transparent;
-    color: white;
-    font-size: 16px;
-    padding: 4px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom-color: black;
-    border-bottom-width: 2.5px;
-}
 .buttons ul li a
 {
     text-decoration:none;
@@ -86,7 +72,7 @@ ul li a:hover
     font-family: consolas;
 }
 
-.result
+/* .result
 {
     position: absolute;
     float: right;
@@ -94,7 +80,8 @@ ul li a:hover
     font-size: 20px;
     color: white;
     margin-left: 84.2%;
-}
+    background-color: white;
+} */
 
 /* login Page CSS */
 
@@ -203,7 +190,7 @@ h1
 .registerbox
 {
     width: 520px;
-    height: 580px;
+    height: 730px;
     background-color: #000000b3;
     color: #fff;
     position: absolute;
@@ -233,7 +220,17 @@ h3
 .registerbox input
 {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 38px;
+}
+.registerbox input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
 }
 .registerbox input[type="text"], input[type="password"]
 {
@@ -368,4 +365,35 @@ h3
     cursor: pointer;
     background-color: orange;
     color: #000;
+}
+.bikeSearch
+{
+    position: fixed;
+    left: 37%;
+    bottom: 60%;
+}
+.bikeSearch input[type="text"]
+{
+    height: 50px;
+    width: 290px;
+    background-color: transparent;
+    color: midnightblue;
+    font-size: 20px;
+    font: bold;
+    padding: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: black;
+    border-bottom-width: 2.5px;
+}
+.bikeSearch .result
+{
+    position: absolute;
+    right: 0%;
+    top: 105%;
+    width: 290px;
+    font-size: 20px;
+    color: white;
+    background-color: cyan;
 }

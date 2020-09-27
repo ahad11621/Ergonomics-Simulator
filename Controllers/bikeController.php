@@ -50,12 +50,15 @@
 	}
 
 	//bikeSelection Page
-	// function loadBikes()
+	// if(isset($_POST['mfid']))
 	// {
-		
-	// }
+	// 	$query = "SELECT * FROM bikes where approval = 1 and id = ".$_POST['mfid'];
+	// 	$bikes = getAssocArray($query);
+	// 	return $bikes;
+	// 	echo json_encode($bikes);
+	//}
 
-	//manufacturerAddNewBike Pag
+	//manufacturerAddNewBike Page
 	function insertNewbikeinfo($newBike){
 		$query = "INSERT INTO bikes VALUES ({$newBike['bikeID']}','{$newBike['bikeName']}','{$newBike['manufacturerName']}','0','{$newBike['bikeImg']}')";
 		execute($query);

@@ -10,19 +10,19 @@
             <h3>Manufacturer Registration</h3>
             <form name="registerform" method="post" action="registerController.php" onsubmit="return val()">
                 <input type="text" id="manufacturerName" name="manufacturerName" onkeyup="removermanufacturerName()" placeholder="Manufacturer Name">
-                <label id= "manufacturerNammMSG"></label>
+                <div id= "manufacturerNammMSG"></div>
                 <input type="text" id="manufacturerID" name="manufacturerID" onkeyup="removermanufacturerID()" placeholder="Manufacturer ID">
-                <label id= "manufacturerIDMSG"></label>
+                <div id= "manufacturerIDMSG"></div>
                 <input type="text" id="ownerName" name="ownerName" onkeyup="removerOwnerName()" placeholder="Owner Name">
-                <label id= "ownermanufacturerNammMSG"></label>
+                <div id= "ownermanufacturerNammMSG"></div>
                 <input type="email" id="email" name="email" onkeyup="removerEmail()" placeholder="E-mail">
-                <label id= "emailMSG"></label>
+                <div id= "emailMSG"></div>
                 <input type="text" id="phone" name="phone" onkeyup="removerPhone()" placeholder="Phone">
-                <label id= "phoneMSG"></label>
+                <div id= "phoneMSG"></div>
                 <input type="password" id="password" name="password" onkeyup="removerPassword()" placeholder="Password">
-                <label id= "passwordMSG"></label>
+                <div id= "passwordMSG"></div>
                 <input type="password" id="confirmPassword" name="confirmPassword" onkeyup="removerConfirmPassword()" placeholder="Confirm Password">
-                <label id= "cpasswordMSG"></label>
+                <div id= "cpasswordMSG"></div>
                 <input type="submit" name="register" value="Register">
             </form>
             <script type="text/javascript" src="../Scripts/register.js"></script>

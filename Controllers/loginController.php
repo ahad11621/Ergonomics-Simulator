@@ -81,54 +81,7 @@
 		// }
 		// return $result;
 		
-		
 	}
 
 ?>
 
-	
-
-
-	<!-- //	require_once('../services/managerService.php');
-
-	if(isset($_POST['login'])){
-
-		$userID = $_POST['userID'];
-		$password1 = $_POST['password'];
-		
-
-		if(empty($userID) || empty($password)){
-			header('location: ../Views/login.php?error=null_value');
-		}else{
-			$password = md5($password1);
-			$query = "SELECT * FROM user WHERE id = '$userID' AND password = '$password'"; 
-			$status = execute($query);
-
-			$id = $status['id'] ;
-			
-			if($status){
-				$status['id'] = $id;
-				
-				if($status['types'] == "1"){
-				
-					$_SESSION['id'] = $id;
-					setcookie('status', "OK", time()+3600, '/');
-
-					header('location: ../Views/manufacturerDashbord.php');
-				} 
-				else if($status['types'] == "0"){
-
-					$_SESSION['id'] = $id;
-
-					setcookie('status', "OK", time()+3600, '/');
-					
-					header('location: ../Views/adminDashbord.php');
-				}
-				else{
-					echo "sorry!!!";
-				}
-			}else{
-				header('location: ../Views/login.php?error=invalid_user');
-			}
-		}
-	} -->

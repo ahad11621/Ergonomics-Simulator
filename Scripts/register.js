@@ -4,8 +4,6 @@ function val()
     //Manufacturer Name 
   var mn=false;
   var manufacturerName = document.getElementById('manufacturerName').value;
-  
-  
   if(manufacturerName=="")
   {
     document.getElementById('manufacturerNammMSG').innerHTML="cannot be empty";
@@ -13,20 +11,20 @@ function val()
   }
   else
   {
-    if((manufacturerName[0]>='A' && manufacturerName[0]<='Z') ||(manufacturerName[0]>='a' && manufacturerName[0]<='z'))
-    {
-      if(manufacturerName.length>=2)
+      if((manufacturerName[0]>='A' && manufacturerName[0]<='Z') ||(manufacturerName[0]>='a' && manufacturerName[0]<='z'))
       {
-        var i=0;
-        while(i<manufacturerName.length)
-        {
-          if(!((manufacturerName[i]>='A' && manufacturerName[i]<='Z') ||(manufacturerName[i]>='a' && manufacturerName[i]<='z') || manufacturerName[i]=='.' || manufacturerName[i]=='-' || manufacturerName[i]==' '))
+          if(manufacturerName.length>=2)
           {
-            document.getElementById('manufacturerNammMSG').innerHTML="Invalid!!";
-            mn=false;
-          }
-          i=i+1;
-        }
+              var i=0;
+              while(i<manufacturerName.length)
+              {
+                  if(!((manufacturerName[i]>='A' && manufacturerName[i]<='Z') ||(manufacturerName[i]>='a' && manufacturerName[i]<='z') || manufacturerName[i]=='.' || manufacturerName[i]=='-' || manufacturerName[i]==' '))
+                  {
+                      document.getElementById('manufacturerNammMSG').innerHTML="Invalid!!";
+                      mn=false;
+                    }
+                    i=i+1;
+                }
         document.getElementById('manufacturerNammMSG').innerHTML="";
         mn=true;
       }
