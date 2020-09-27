@@ -1,5 +1,6 @@
 <?php
 	require_once '../Models/db_connect.php';
+	
 	session_start();
 
 
@@ -67,21 +68,15 @@
 			$result = $result[0];
 		}
 		return $result;
-
-		// if($result)
-		// {
-		// 	if($result['types'] == '1')
-		// 	{
-		// 		header("Location: manufacturerDashbord.php");
-		// 	}
-		// 	elseif($result['types'] == '0')
-		// 	{
-		// 		header("Location: adminDashbord.php");
-		// 	}
-		// }
-		// return $result;
 		
 	}
 
-?>
+	function checkUser($uid)
+	{
+		$query = "SELECT name from user where id = '$uid'";
+		$user = getAssocArray($query);
+		return count($user);
+	}
 
+?>
+		

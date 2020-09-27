@@ -2,25 +2,10 @@
     include 'manufacturerHeader.php';
     require_once '../Controllers/bikeController.php';
     
-    // session_start();
-    // $id = $_SESSION['id'];
-    // $bikes = getAllByManufacturerName($id);
+    session_start();
+    $id = $_SESSION['id'];
+    $bikes = getMenufacturerNameByID($id);
 
-    // if(!empty($_REQUEST["id"]))
-    // {
-    //     $c_id = $_REQUEST["id"];
-    //     addThisBike($c_id);
-    // }
-    // if(!empty($_REQUEST["key"]))
-    // {
-    //     $dbid = $_REQUEST["key"];
-    //     deleteThisBike($dbid);
-    // }
-    // if(!empty($_REQUEST["key1"]))
-    // {
-    //     $dbid = $_REQUEST["key1"];
-    //     deleteThisBike1($dbid);
-    // }
     
 ?>
 

@@ -1,12 +1,12 @@
 <?php
 	require_once '../Models/db_connect.php';
 
-	$manufacturerName = $_POST["manufacturerName"];
-	$manufacturerID = $_POST["manufacturerID"];
-	$ownerName = $_POST["ownerName"]; 
-	$email = $_POST["email"];
-	$phone = $_POST["phone"];
-	$password = $_POST["password"];
+	// $manufacturerName = $_POST["manufacturerName"];
+	// $manufacturerID = $_POST["manufacturerID"];
+	// $ownerName = $_POST["ownerName"]; 
+	// $email = $_POST["email"];
+	// $phone = $_POST["phone"];
+	// $password = $_POST["password"];
 
 	if(isset($_POST["register"]))
 	{
